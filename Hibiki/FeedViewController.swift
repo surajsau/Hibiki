@@ -11,4 +11,8 @@ import UIKit
 
 class FeedViewController: UIViewController {
     
+    override func viewDidAppear(_ animated: Bool) {
+        Repository.instance.feed()
+    }
+    
 }

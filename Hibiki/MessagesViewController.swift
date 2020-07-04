@@ -11,4 +11,14 @@ import UIKit
 
 class MessagesViewController: UIViewController {
     
+    private var items: [Event]? = nil
+    
+    override func viewDidAppear(_ animated: Bool) {
+        Repository.instance.messages(refresh: true, onSuccess: { events in
+            
+        }, onError: { error in
+            
+        })
+    }
+    
 }

@@ -17,6 +17,8 @@ class Repository {
     
     static let instance = Repository()
     
+    private var messagesCursor: String? = nil
+    
     private init() {
         self.defaults = UserDefaults.standard
         self.swifter = Swifter(
@@ -51,6 +53,31 @@ class Repository {
             }
             
             self.trends(with: "\(tokyo)", onError: onError)
+        }, failure: { error in
+            onError(error)
+        })
+    }
+    
+    func feed() {
+        self.swifter.getHomeTimeline(count: 50, success: { json in
+            print(json)
+        }, failure: { error in
+            print(error)
+        })
+    }
+    
+    func messages(refresh: Bool = false, onSuccess: @escaping ([Event]?) -> Void, onError: @escaping (Error) -> Void) {
+        //clear next_cursor on refresh
+        if(refresh) {
+            self.messagesCursor = nil
+        }
+        
+        self.swifter.getDirectMessages(count: 20, cursor: self.messagesCursor, success: { json in
+            self.messagesCursor = json["next_cursor"].string
+            let events = json["events"].array?.map { item in
+                item.event()
+            }
+            onSuccess(events)
         }, failure: { error in
             onError(error)
         })

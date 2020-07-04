@@ -39,7 +39,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Trends" image="first" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,7 +74,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="second" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,28 +108,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="vPz-ws-HHX">
-                                <rect key="frame" x="106" y="426.5" width="202" height="43"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aBK-zh-XyY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5K-1C-zCy">
-                                <rect key="frame" x="99.5" y="477.5" width="215" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="z65-O2-suj" userLabel="Message Cell">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z65-O2-suj" id="neu-L6-2Qf">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mXN-aj-qIL" userLabel="Cell Container">
+                                                    <rect key="frame" x="0.0" y="10" width="414" height="45"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10E-9B-4aW" userLabel="Name Container">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="24"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="川口太郎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnl-I1-tqQ" userLabel="username">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="338" height="24"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020/06/19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAi-wr-jtx" userLabel="timestamp">
+                                                                    <rect key="frame" x="338" y="0.0" width="76" height="24"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="76" id="cbc-qO-Sgu"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="UAi-wr-jtx" firstAttribute="centerY" secondItem="qnl-I1-tqQ" secondAttribute="centerY" id="Ymf-hV-dzx"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2FH-u8-8Q3" userLabel="message">
+                                                            <rect key="frame" x="0.0" y="24" width="414" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="mXN-aj-qIL" secondAttribute="bottom" constant="10" id="G9Y-57-ttb"/>
+                                                <constraint firstItem="mXN-aj-qIL" firstAttribute="leading" secondItem="neu-L6-2Qf" secondAttribute="leading" id="GNZ-lj-hpn"/>
+                                                <constraint firstAttribute="trailing" secondItem="mXN-aj-qIL" secondAttribute="trailing" id="Xyl-qc-vLQ"/>
+                                                <constraint firstItem="mXN-aj-qIL" firstAttribute="top" secondItem="neu-L6-2Qf" secondAttribute="top" constant="10" id="d0t-4G-RiK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="x5K-1C-zCy" firstAttribute="centerX" secondItem="vPz-ws-HHX" secondAttribute="centerX" id="2cs-wP-9jM"/>
-                            <constraint firstAttribute="centerX" secondItem="vPz-ws-HHX" secondAttribute="centerX" id="4YD-pC-x6v"/>
-                            <constraint firstItem="x5K-1C-zCy" firstAttribute="top" secondItem="vPz-ws-HHX" secondAttribute="bottom" constant="8" symbolic="YES" id="S2P-7N-SYP"/>
-                            <constraint firstAttribute="centerY" secondItem="vPz-ws-HHX" secondAttribute="centerY" id="Zdz-5T-QsR"/>
+                            <constraint firstItem="aBK-zh-XyY" firstAttribute="leading" secondItem="XnL-ei-bmr" secondAttribute="leading" id="FMS-kA-Dfb"/>
+                            <constraint firstAttribute="bottom" secondItem="aBK-zh-XyY" secondAttribute="bottom" id="U8i-Qi-mw0"/>
+                            <constraint firstAttribute="trailing" secondItem="aBK-zh-XyY" secondAttribute="trailing" id="h8R-Np-SIi"/>
+                            <constraint firstItem="aBK-zh-XyY" firstAttribute="top" secondItem="XnL-ei-bmr" secondAttribute="top" id="rkF-aw-Maf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IjT-Be-yQD"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="CTK-YS-1pa"/>
+                    <tabBarItem key="tabBarItem" title="Messages" image="second" id="CTK-YS-1pa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1zk-qa-0fc" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,7 +209,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XAX-1a-tnA"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="7ST-5O-pnr"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="first" id="7ST-5O-pnr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VJa-xk-YQz" sceneMemberID="firstResponder"/>
             </objects>

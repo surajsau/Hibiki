@@ -28,7 +28,7 @@
                                         <rect key="frame" x="0.0" y="57.5" width="374" height="30"/>
                                         <state key="normal" title="ログインする"/>
                                         <connections>
-                                            <segue destination="JhU-nW-vHw" kind="show" id="6Cf-Fv-eY6"/>
+                                            <action selector="login:" destination="az8-EF-thX" eventType="touchUpInside" id="UzL-o0-Qfs"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -47,34 +47,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0wx-I0-9IY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="126"/>
-        </scene>
-        <!--Login-->
-        <scene sceneID="N9H-Yc-o0A">
-            <objects>
-                <viewController id="JhU-nW-vHw" userLabel="Login" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8nB-1o-Lu6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="byj-OD-nFT">
-                                <rect key="frame" x="20" y="40" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="byj-OD-nFT" firstAttribute="top" secondItem="gqx-dR-te6" secondAttribute="top" constant="40" id="Q2F-WI-DuS"/>
-                            <constraint firstAttribute="trailing" secondItem="byj-OD-nFT" secondAttribute="trailing" constant="20" id="RHJ-Ua-gbe"/>
-                            <constraint firstItem="byj-OD-nFT" firstAttribute="leading" secondItem="8nB-1o-Lu6" secondAttribute="leading" constant="20" id="a5A-io-jqN"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="gqx-dR-te6"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="wBy-oX-vi8"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bWG-JM-MY5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1039" y="126"/>
         </scene>
     </scenes>
 </document>

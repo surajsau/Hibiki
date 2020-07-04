@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,8 @@
 		4F368A3724B02D9F005B83FC /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A3624B02D9F005B83FC /* MessagesViewController.swift */; };
 		4F368A3924B032B4005B83FC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A3824B032B4005B83FC /* OnboardingViewController.swift */; };
 		4F368A3B24B032DB005B83FC /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F368A3A24B032DB005B83FC /* Onboarding.storyboard */; };
+		4F368A3D24B03F07005B83FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F368A3C24B03F07005B83FC /* GoogleService-Info.plist */; };
+		4F368A4024B0400F005B83FC /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A3F24B0400F005B83FC /* Repository.swift */; };
 		8919CAEC324AB0FC9D7C83B5 /* Pods_Hibiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929CF9363F2666B0DD6AFCE2 /* Pods_Hibiki.framework */; };
 		A764955972A22B9008B9743E /* Pods_Hibiki_HibikiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F121ED08F6C1E8D0362E312 /* Pods_Hibiki_HibikiUITests.framework */; };
 		FAD7D8FC17C768E815BA1C3F /* Pods_HibikiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD211773B75AF5F048E0DB07 /* Pods_HibikiTests.framework */; };
@@ -64,6 +66,8 @@
 		4F368A3624B02D9F005B83FC /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		4F368A3824B032B4005B83FC /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		4F368A3A24B032DB005B83FC /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		4F368A3C24B03F07005B83FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F368A3F24B0400F005B83FC /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		5F121ED08F6C1E8D0362E312 /* Pods_Hibiki_HibikiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hibiki_HibikiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82F21330FBB03966B3EBDC56 /* Pods-Hibiki-HibikiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hibiki-HibikiUITests.debug.xcconfig"; path = "Target Support Files/Pods-Hibiki-HibikiUITests/Pods-Hibiki-HibikiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		929CF9363F2666B0DD6AFCE2 /* Pods_Hibiki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hibiki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +130,8 @@
 		4F368A0024B02C9F005B83FC /* Hibiki */ = {
 			isa = PBXGroup;
 			children = (
+				4F368A4124B04096005B83FC /* onboarding */,
+				4F368A3E24B03FFB005B83FC /* data */,
 				4F368A0124B02C9F005B83FC /* AppDelegate.swift */,
 				4F368A0324B02C9F005B83FC /* SceneDelegate.swift */,
 				4F368A0524B02C9F005B83FC /* TrendsViewController.swift */,
@@ -136,8 +142,7 @@
 				4F368A1124B02CA3005B83FC /* Info.plist */,
 				4F368A3424B02D82005B83FC /* FeedViewController.swift */,
 				4F368A3624B02D9F005B83FC /* MessagesViewController.swift */,
-				4F368A3824B032B4005B83FC /* OnboardingViewController.swift */,
-				4F368A3A24B032DB005B83FC /* Onboarding.storyboard */,
+				4F368A3C24B03F07005B83FC /* GoogleService-Info.plist */,
 			);
 			path = Hibiki;
 			sourceTree = "<group>";
@@ -160,6 +165,23 @@
 			path = HibikiUITests;
 			sourceTree = "<group>";
 		};
+		4F368A3E24B03FFB005B83FC /* data */ = {
+			isa = PBXGroup;
+			children = (
+				4F368A3F24B0400F005B83FC /* Repository.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		4F368A4124B04096005B83FC /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				4F368A3824B032B4005B83FC /* OnboardingViewController.swift */,
+				4F368A3A24B032DB005B83FC /* Onboarding.storyboard */,
+			);
+			path = onboarding;
+			sourceTree = "<group>";
+		};
 		899277E8A70C90B61E225302 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,7 +202,6 @@
 				B364E7CB9FBDBCB91CFB40D8 /* Pods-HibikiTests.debug.xcconfig */,
 				05697C006BBF33CE0733BA62 /* Pods-HibikiTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -295,6 +316,7 @@
 			files = (
 				4F368A1024B02CA3005B83FC /* LaunchScreen.storyboard in Resources */,
 				4F368A3B24B032DB005B83FC /* Onboarding.storyboard in Resources */,
+				4F368A3D24B03F07005B83FC /* GoogleService-Info.plist in Resources */,
 				4F368A0D24B02CA3005B83FC /* Assets.xcassets in Resources */,
 				4F368A0B24B02C9F005B83FC /* Main.storyboard in Resources */,
 			);
@@ -427,6 +449,7 @@
 				4F368A3724B02D9F005B83FC /* MessagesViewController.swift in Sources */,
 				4F368A0824B02C9F005B83FC /* NotificationViewController.swift in Sources */,
 				4F368A0624B02C9F005B83FC /* TrendsViewController.swift in Sources */,
+				4F368A4024B0400F005B83FC /* Repository.swift in Sources */,
 				4F368A3924B032B4005B83FC /* OnboardingViewController.swift in Sources */,
 				4F368A3524B02D83005B83FC /* FeedViewController.swift in Sources */,
 				4F368A0224B02C9F005B83FC /* AppDelegate.swift in Sources */,

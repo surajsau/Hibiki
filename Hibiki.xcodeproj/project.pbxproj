@@ -22,6 +22,7 @@
 		4F368A3B24B032DB005B83FC /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F368A3A24B032DB005B83FC /* Onboarding.storyboard */; };
 		4F368A3D24B03F07005B83FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F368A3C24B03F07005B83FC /* GoogleService-Info.plist */; };
 		4F368A4024B0400F005B83FC /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A3F24B0400F005B83FC /* Repository.swift */; };
+		4F368A4924B07CAF005B83FC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A4824B07CAF005B83FC /* Constants.swift */; };
 		8919CAEC324AB0FC9D7C83B5 /* Pods_Hibiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929CF9363F2666B0DD6AFCE2 /* Pods_Hibiki.framework */; };
 		A764955972A22B9008B9743E /* Pods_Hibiki_HibikiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F121ED08F6C1E8D0362E312 /* Pods_Hibiki_HibikiUITests.framework */; };
 		FAD7D8FC17C768E815BA1C3F /* Pods_HibikiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD211773B75AF5F048E0DB07 /* Pods_HibikiTests.framework */; };
@@ -68,6 +69,7 @@
 		4F368A3A24B032DB005B83FC /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		4F368A3C24B03F07005B83FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4F368A3F24B0400F005B83FC /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		4F368A4824B07CAF005B83FC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5F121ED08F6C1E8D0362E312 /* Pods_Hibiki_HibikiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hibiki_HibikiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82F21330FBB03966B3EBDC56 /* Pods-Hibiki-HibikiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hibiki-HibikiUITests.debug.xcconfig"; path = "Target Support Files/Pods-Hibiki-HibikiUITests/Pods-Hibiki-HibikiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		929CF9363F2666B0DD6AFCE2 /* Pods_Hibiki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hibiki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				4F368A3F24B0400F005B83FC /* Repository.swift */,
+				4F368A4824B07CAF005B83FC /* Constants.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				4F368A3524B02D83005B83FC /* FeedViewController.swift in Sources */,
 				4F368A0224B02C9F005B83FC /* AppDelegate.swift in Sources */,
 				4F368A0424B02C9F005B83FC /* SceneDelegate.swift in Sources */,
+				4F368A4924B07CAF005B83FC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,6 @@ target 'Hibiki' do
     # Pods for testing
   end
   pod 'Firebase/Analytics'
-  pod 'Firebase/Auth'
-  pod 'Alamofire', '~> 5.2'
+  pod 'Swifter', :git => 'https://github.com/mattdonnelly/Swifter.git'
 
 end

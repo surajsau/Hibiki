@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--onboarding-->
+        <!--Onboarding View Controller-->
         <scene sceneID="eNk-g0-A8O">
             <objects>
-                <viewController id="az8-EF-thX" userLabel="onboarding" customClass="OnboardingViewController" customModule="Hibiki" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Onboarding" id="az8-EF-thX" customClass="OnboardingViewController" customModule="Hibiki" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1R6-Cr-Heq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

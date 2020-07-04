@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="az8-EF-thX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--onboarding-->
+        <scene sceneID="eNk-g0-A8O">
+            <objects>
+                <viewController id="az8-EF-thX" userLabel="onboarding" customClass="OnboardingViewController" customModule="Hibiki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1R6-Cr-Heq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XLK-CW-s9H">
+                                <rect key="frame" x="20" y="404.5" width="374" height="87.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="「いま」起っていることを見つけよう" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjh-mn-HLM">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="57.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8Q-Gc-nQL">
+                                        <rect key="frame" x="0.0" y="57.5" width="374" height="30"/>
+                                        <state key="normal" title="ログインする"/>
+                                        <connections>
+                                            <segue destination="JhU-nW-vHw" kind="show" id="6Cf-Fv-eY6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XLK-CW-s9H" firstAttribute="centerX" secondItem="1R6-Cr-Heq" secondAttribute="centerX" id="AIj-gv-Efj"/>
+                            <constraint firstItem="XLK-CW-s9H" firstAttribute="leading" secondItem="1R6-Cr-Heq" secondAttribute="leading" constant="20" id="Fi4-2o-rUJ"/>
+                            <constraint firstItem="XLK-CW-s9H" firstAttribute="centerY" secondItem="1R6-Cr-Heq" secondAttribute="centerY" id="Vie-Xn-2nz"/>
+                            <constraint firstAttribute="trailing" secondItem="XLK-CW-s9H" secondAttribute="trailing" constant="20" id="dPv-GF-ctK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EcU-a5-5hZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0wx-I0-9IY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="126"/>
+        </scene>
+        <!--キャンセル-->
+        <scene sceneID="N9H-Yc-o0A">
+            <objects>
+                <viewController id="JhU-nW-vHw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8nB-1o-Lu6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gqx-dR-te6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="キャンセル" id="wBy-oX-vi8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bWG-JM-MY5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039" y="126"/>
+        </scene>
+    </scenes>
+</document>

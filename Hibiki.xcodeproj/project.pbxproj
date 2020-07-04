@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		4F368A0224B02C9F005B83FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A0124B02C9F005B83FC /* AppDelegate.swift */; };
 		4F368A0424B02C9F005B83FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A0324B02C9F005B83FC /* SceneDelegate.swift */; };
-		4F368A0624B02C9F005B83FC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A0524B02C9F005B83FC /* FirstViewController.swift */; };
-		4F368A0824B02C9F005B83FC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A0724B02C9F005B83FC /* SecondViewController.swift */; };
+		4F368A0624B02C9F005B83FC /* TrendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A0524B02C9F005B83FC /* TrendsViewController.swift */; };
+		4F368A0824B02C9F005B83FC /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A0724B02C9F005B83FC /* NotificationViewController.swift */; };
 		4F368A0B24B02C9F005B83FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F368A0924B02C9F005B83FC /* Main.storyboard */; };
 		4F368A0D24B02CA3005B83FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F368A0C24B02CA3005B83FC /* Assets.xcassets */; };
 		4F368A1024B02CA3005B83FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F368A0E24B02CA3005B83FC /* LaunchScreen.storyboard */; };
 		4F368A1B24B02CA4005B83FC /* HibikiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A1A24B02CA4005B83FC /* HibikiTests.swift */; };
 		4F368A2624B02CA4005B83FC /* HibikiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A2524B02CA4005B83FC /* HibikiUITests.swift */; };
+		4F368A3524B02D83005B83FC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A3424B02D82005B83FC /* FeedViewController.swift */; };
+		4F368A3724B02D9F005B83FC /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A3624B02D9F005B83FC /* MessagesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,8 @@
 		4F3689FE24B02C9F005B83FC /* Hibiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hibiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F368A0124B02C9F005B83FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F368A0324B02C9F005B83FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4F368A0524B02C9F005B83FC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		4F368A0724B02C9F005B83FC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		4F368A0524B02C9F005B83FC /* TrendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsViewController.swift; sourceTree = "<group>"; };
+		4F368A0724B02C9F005B83FC /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		4F368A0A24B02C9F005B83FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F368A0C24B02CA3005B83FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F368A0F24B02CA3005B83FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		4F368A2124B02CA4005B83FC /* HibikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HibikiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F368A2524B02CA4005B83FC /* HibikiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HibikiUITests.swift; sourceTree = "<group>"; };
 		4F368A2724B02CA4005B83FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F368A3424B02D82005B83FC /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		4F368A3624B02D9F005B83FC /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +107,14 @@
 			children = (
 				4F368A0124B02C9F005B83FC /* AppDelegate.swift */,
 				4F368A0324B02C9F005B83FC /* SceneDelegate.swift */,
-				4F368A0524B02C9F005B83FC /* FirstViewController.swift */,
-				4F368A0724B02C9F005B83FC /* SecondViewController.swift */,
+				4F368A0524B02C9F005B83FC /* TrendsViewController.swift */,
+				4F368A0724B02C9F005B83FC /* NotificationViewController.swift */,
 				4F368A0924B02C9F005B83FC /* Main.storyboard */,
 				4F368A0C24B02CA3005B83FC /* Assets.xcassets */,
 				4F368A0E24B02CA3005B83FC /* LaunchScreen.storyboard */,
 				4F368A1124B02CA3005B83FC /* Info.plist */,
+				4F368A3424B02D82005B83FC /* FeedViewController.swift */,
+				4F368A3624B02D9F005B83FC /* MessagesViewController.swift */,
 			);
 			path = Hibiki;
 			sourceTree = "<group>";
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F368A0824B02C9F005B83FC /* SecondViewController.swift in Sources */,
-				4F368A0624B02C9F005B83FC /* FirstViewController.swift in Sources */,
+				4F368A3724B02D9F005B83FC /* MessagesViewController.swift in Sources */,
+				4F368A0824B02C9F005B83FC /* NotificationViewController.swift in Sources */,
+				4F368A0624B02C9F005B83FC /* TrendsViewController.swift in Sources */,
+				4F368A3524B02D83005B83FC /* FeedViewController.swift in Sources */,
 				4F368A0224B02C9F005B83FC /* AppDelegate.swift in Sources */,
 				4F368A0424B02C9F005B83FC /* SceneDelegate.swift in Sources */,
 			);
@@ -444,7 +452,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = in.surajsau.Hibiki;
+				PRODUCT_BUNDLE_IDENTIFIER = in.surajsau.hibiki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,7 +469,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = in.surajsau.Hibiki;
+				PRODUCT_BUNDLE_IDENTIFIER = in.surajsau.hibiki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

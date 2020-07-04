@@ -27,7 +27,7 @@ class Repository {
     
     func login(_ vc: UIViewController, callback: @escaping (_ error: Error?) -> Void) {
         self.swifter.authorize(withCallback: Constants.CALLBACK_URL!, presentingFrom: vc, success: { token, response in
-            guard let token = token as? Credential.OAuthAccessToken else {
+            guard let token = token else {
                 return
             }
             
@@ -44,17 +44,23 @@ class Repository {
     
     func trends(onError: @escaping (_ error: Error?) -> Void) {
         self.swifter.getClosestTrends(for: Constants.TOKYO, success: { json in
+            guard let tokyo = json[0]["woeid"].double else {
+                let error = NSError(domain: "Empty response", code: -1, userInfo: nil)
+                onError(error)
+                return
+            }
             
+            self.trends(with: "\(tokyo)", onError: onError)
         }, failure: { error in
             onError(error)
         })
     }
     
-    private func trends(for woeid: String, onError: @escaping (_ error: Error?) -> Void) {
+    private func trends(with woeid: String, onError: @escaping (_ error: Error?) -> Void) {
         self.swifter.getTrendsPlace(with: woeid, success: { json in
-            
+            print(json)
         }, failure: { error in
-            onError(error)
+            print(error)
         })
     }
     

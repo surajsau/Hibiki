@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F368A0224B02C9F005B83FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A0124B02C9F005B83FC /* AppDelegate.swift */; };
+		4F368A0424B02C9F005B83FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A0324B02C9F005B83FC /* SceneDelegate.swift */; };
+		4F368A0624B02C9F005B83FC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A0524B02C9F005B83FC /* FirstViewController.swift */; };
+		4F368A0824B02C9F005B83FC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A0724B02C9F005B83FC /* SecondViewController.swift */; };
+		4F368A0B24B02C9F005B83FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F368A0924B02C9F005B83FC /* Main.storyboard */; };
+		4F368A0D24B02CA3005B83FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F368A0C24B02CA3005B83FC /* Assets.xcassets */; };
+		4F368A1024B02CA3005B83FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F368A0E24B02CA3005B83FC /* LaunchScreen.storyboard */; };
+		4F368A1B24B02CA4005B83FC /* HibikiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A1A24B02CA4005B83FC /* HibikiTests.swift */; };
+		4F368A2624B02CA4005B83FC /* HibikiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A2524B02CA4005B83FC /* HibikiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F368A1724B02CA4005B83FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F3689F624B02C9F005B83FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F3689FD24B02C9F005B83FC;
+			remoteInfo = Hibiki;
+		};
+		4F368A2224B02CA4005B83FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F3689F624B02C9F005B83FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F3689FD24B02C9F005B83FC;
+			remoteInfo = Hibiki;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F3689FE24B02C9F005B83FC /* Hibiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hibiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F368A0124B02C9F005B83FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4F368A0324B02C9F005B83FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4F368A0524B02C9F005B83FC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		4F368A0724B02C9F005B83FC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		4F368A0A24B02C9F005B83FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4F368A0C24B02CA3005B83FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F368A0F24B02CA3005B83FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4F368A1124B02CA3005B83FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F368A1624B02CA4005B83FC /* HibikiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HibikiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F368A1A24B02CA4005B83FC /* HibikiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HibikiTests.swift; sourceTree = "<group>"; };
+		4F368A1C24B02CA4005B83FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F368A2124B02CA4005B83FC /* HibikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HibikiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F368A2524B02CA4005B83FC /* HibikiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HibikiUITests.swift; sourceTree = "<group>"; };
+		4F368A2724B02CA4005B83FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F3689FB24B02C9F005B83FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F368A1324B02CA4005B83FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F368A1E24B02CA4005B83FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F3689F524B02C9F005B83FC = {
+			isa = PBXGroup;
+			children = (
+				4F368A0024B02C9F005B83FC /* Hibiki */,
+				4F368A1924B02CA4005B83FC /* HibikiTests */,
+				4F368A2424B02CA4005B83FC /* HibikiUITests */,
+				4F3689FF24B02C9F005B83FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F3689FF24B02C9F005B83FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F3689FE24B02C9F005B83FC /* Hibiki.app */,
+				4F368A1624B02CA4005B83FC /* HibikiTests.xctest */,
+				4F368A2124B02CA4005B83FC /* HibikiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F368A0024B02C9F005B83FC /* Hibiki */ = {
+			isa = PBXGroup;
+			children = (
+				4F368A0124B02C9F005B83FC /* AppDelegate.swift */,
+				4F368A0324B02C9F005B83FC /* SceneDelegate.swift */,
+				4F368A0524B02C9F005B83FC /* FirstViewController.swift */,
+				4F368A0724B02C9F005B83FC /* SecondViewController.swift */,
+				4F368A0924B02C9F005B83FC /* Main.storyboard */,
+				4F368A0C24B02CA3005B83FC /* Assets.xcassets */,
+				4F368A0E24B02CA3005B83FC /* LaunchScreen.storyboard */,
+				4F368A1124B02CA3005B83FC /* Info.plist */,
+			);
+			path = Hibiki;
+			sourceTree = "<group>";
+		};
+		4F368A1924B02CA4005B83FC /* HibikiTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F368A1A24B02CA4005B83FC /* HibikiTests.swift */,
+				4F368A1C24B02CA4005B83FC /* Info.plist */,
+			);
+			path = HibikiTests;
+			sourceTree = "<group>";
+		};
+		4F368A2424B02CA4005B83FC /* HibikiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4F368A2524B02CA4005B83FC /* HibikiUITests.swift */,
+				4F368A2724B02CA4005B83FC /* Info.plist */,
+			);
+			path = HibikiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F3689FD24B02C9F005B83FC /* Hibiki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F368A2A24B02CA4005B83FC /* Build configuration list for PBXNativeTarget "Hibiki" */;
+			buildPhases = (
+				4F3689FA24B02C9F005B83FC /* Sources */,
+				4F3689FB24B02C9F005B83FC /* Frameworks */,
+				4F3689FC24B02C9F005B83FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hibiki;
+			productName = Hibiki;
+			productReference = 4F3689FE24B02C9F005B83FC /* Hibiki.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F368A1524B02CA4005B83FC /* HibikiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F368A2D24B02CA4005B83FC /* Build configuration list for PBXNativeTarget "HibikiTests" */;
+			buildPhases = (
+				4F368A1224B02CA4005B83FC /* Sources */,
+				4F368A1324B02CA4005B83FC /* Frameworks */,
+				4F368A1424B02CA4005B83FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F368A1824B02CA4005B83FC /* PBXTargetDependency */,
+			);
+			name = HibikiTests;
+			productName = HibikiTests;
+			productReference = 4F368A1624B02CA4005B83FC /* HibikiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4F368A2024B02CA4005B83FC /* HibikiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F368A3024B02CA4005B83FC /* Build configuration list for PBXNativeTarget "HibikiUITests" */;
+			buildPhases = (
+				4F368A1D24B02CA4005B83FC /* Sources */,
+				4F368A1E24B02CA4005B83FC /* Frameworks */,
+				4F368A1F24B02CA4005B83FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F368A2324B02CA4005B83FC /* PBXTargetDependency */,
+			);
+			name = HibikiUITests;
+			productName = HibikiUITests;
+			productReference = 4F368A2124B02CA4005B83FC /* HibikiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F3689F624B02C9F005B83FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Goodpatch;
+				TargetAttributes = {
+					4F3689FD24B02C9F005B83FC = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					4F368A1524B02CA4005B83FC = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 4F3689FD24B02C9F005B83FC;
+					};
+					4F368A2024B02CA4005B83FC = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 4F3689FD24B02C9F005B83FC;
+					};
+				};
+			};
+			buildConfigurationList = 4F3689F924B02C9F005B83FC /* Build configuration list for PBXProject "Hibiki" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F3689F524B02C9F005B83FC;
+			productRefGroup = 4F3689FF24B02C9F005B83FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F3689FD24B02C9F005B83FC /* Hibiki */,
+				4F368A1524B02CA4005B83FC /* HibikiTests */,
+				4F368A2024B02CA4005B83FC /* HibikiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F3689FC24B02C9F005B83FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F368A1024B02CA3005B83FC /* LaunchScreen.storyboard in Resources */,
+				4F368A0D24B02CA3005B83FC /* Assets.xcassets in Resources */,
+				4F368A0B24B02C9F005B83FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F368A1424B02CA4005B83FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F368A1F24B02CA4005B83FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F3689FA24B02C9F005B83FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F368A0824B02C9F005B83FC /* SecondViewController.swift in Sources */,
+				4F368A0624B02C9F005B83FC /* FirstViewController.swift in Sources */,
+				4F368A0224B02C9F005B83FC /* AppDelegate.swift in Sources */,
+				4F368A0424B02C9F005B83FC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F368A1224B02CA4005B83FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F368A1B24B02CA4005B83FC /* HibikiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F368A1D24B02CA4005B83FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F368A2624B02CA4005B83FC /* HibikiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F368A1824B02CA4005B83FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F3689FD24B02C9F005B83FC /* Hibiki */;
+			targetProxy = 4F368A1724B02CA4005B83FC /* PBXContainerItemProxy */;
+		};
+		4F368A2324B02CA4005B83FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F3689FD24B02C9F005B83FC /* Hibiki */;
+			targetProxy = 4F368A2224B02CA4005B83FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4F368A0924B02C9F005B83FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F368A0A24B02C9F005B83FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4F368A0E24B02CA3005B83FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F368A0F24B02CA3005B83FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F368A2824B02CA4005B83FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F368A2924B02CA4005B83FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F368A2B24B02CA4005B83FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Hibiki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = in.surajsau.Hibiki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F368A2C24B02CA4005B83FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Hibiki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = in.surajsau.Hibiki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4F368A2E24B02CA4005B83FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HibikiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = in.surajsau.HibikiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hibiki.app/Hibiki";
+			};
+			name = Debug;
+		};
+		4F368A2F24B02CA4005B83FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HibikiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = in.surajsau.HibikiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hibiki.app/Hibiki";
+			};
+			name = Release;
+		};
+		4F368A3124B02CA4005B83FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HibikiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = in.surajsau.HibikiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hibiki;
+			};
+			name = Debug;
+		};
+		4F368A3224B02CA4005B83FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HibikiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = in.surajsau.HibikiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hibiki;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F3689F924B02C9F005B83FC /* Build configuration list for PBXProject "Hibiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F368A2824B02CA4005B83FC /* Debug */,
+				4F368A2924B02CA4005B83FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F368A2A24B02CA4005B83FC /* Build configuration list for PBXNativeTarget "Hibiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F368A2B24B02CA4005B83FC /* Debug */,
+				4F368A2C24B02CA4005B83FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F368A2D24B02CA4005B83FC /* Build configuration list for PBXNativeTarget "HibikiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F368A2E24B02CA4005B83FC /* Debug */,
+				4F368A2F24B02CA4005B83FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F368A3024B02CA4005B83FC /* Build configuration list for PBXNativeTarget "HibikiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F368A3124B02CA4005B83FC /* Debug */,
+				4F368A3224B02CA4005B83FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F3689F624B02C9F005B83FC /* Project object */;
+}

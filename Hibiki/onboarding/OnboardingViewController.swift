@@ -12,8 +12,13 @@ import UIKit
 class OnboardingViewController: UIViewController {
     
     @IBAction func login(_ sender: Any) {
-        let url = URL(string: "hibiki://success")!
-        Repository.instance.login()
+        Repository.instance.login(self, callback: { error in
+            if error != nil {
+                self.showError(error: error?.localizedDescription)
+            } else {
+                self.openMain()
+            }
+        })
     }
     
     func openMain() {

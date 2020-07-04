@@ -23,6 +23,7 @@
 		4F368A3D24B03F07005B83FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F368A3C24B03F07005B83FC /* GoogleService-Info.plist */; };
 		4F368A4024B0400F005B83FC /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A3F24B0400F005B83FC /* Repository.swift */; };
 		4F368A4924B07CAF005B83FC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A4824B07CAF005B83FC /* Constants.swift */; };
+		4F368A4D24B087AD005B83FC /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F368A4C24B087AD005B83FC /* Secrets.swift */; };
 		8919CAEC324AB0FC9D7C83B5 /* Pods_Hibiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929CF9363F2666B0DD6AFCE2 /* Pods_Hibiki.framework */; };
 		A764955972A22B9008B9743E /* Pods_Hibiki_HibikiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F121ED08F6C1E8D0362E312 /* Pods_Hibiki_HibikiUITests.framework */; };
 		FAD7D8FC17C768E815BA1C3F /* Pods_HibikiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD211773B75AF5F048E0DB07 /* Pods_HibikiTests.framework */; };
@@ -70,6 +71,7 @@
 		4F368A3C24B03F07005B83FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4F368A3F24B0400F005B83FC /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		4F368A4824B07CAF005B83FC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4F368A4C24B087AD005B83FC /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		5F121ED08F6C1E8D0362E312 /* Pods_Hibiki_HibikiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hibiki_HibikiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82F21330FBB03966B3EBDC56 /* Pods-Hibiki-HibikiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hibiki-HibikiUITests.debug.xcconfig"; path = "Target Support Files/Pods-Hibiki-HibikiUITests/Pods-Hibiki-HibikiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		929CF9363F2666B0DD6AFCE2 /* Pods_Hibiki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hibiki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +147,7 @@
 				4F368A3424B02D82005B83FC /* FeedViewController.swift */,
 				4F368A3624B02D9F005B83FC /* MessagesViewController.swift */,
 				4F368A3C24B03F07005B83FC /* GoogleService-Info.plist */,
+				4F368A4C24B087AD005B83FC /* Secrets.swift */,
 			);
 			path = Hibiki;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F368A3724B02D9F005B83FC /* MessagesViewController.swift in Sources */,
+				4F368A4D24B087AD005B83FC /* Secrets.swift in Sources */,
 				4F368A0824B02C9F005B83FC /* NotificationViewController.swift in Sources */,
 				4F368A0624B02C9F005B83FC /* TrendsViewController.swift in Sources */,
 				4F368A4024B0400F005B83FC /* Repository.swift in Sources */,

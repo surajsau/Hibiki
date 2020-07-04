@@ -9,7 +9,6 @@
 import Foundation
 
 struct Constants {
-    static let CALLBACK_URL = URL("hibiki://success")
-    static let CONSUMER_KEY = "858sxYl1edubKsweRvN4zQxb1"
-    static let CONSUMER_SECRET = "f6DYrjMGptdakQcAjSKV1YWrbgyTfCt9tXSuWwYOVQkN98CQMw"
+    static let CALLBACK_URL = URL(string: "hibiki://success")
+    static let TOKYO = (35.6762, 139.6503)
 }

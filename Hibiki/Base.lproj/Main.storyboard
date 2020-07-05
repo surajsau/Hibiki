@@ -112,7 +112,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="z65-O2-suj" userLabel="Message Cell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="z65-O2-suj" userLabel="Message Cell" customClass="MessagesCellView" customModule="Hibiki" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z65-O2-suj" id="neu-L6-2Qf">
@@ -161,6 +161,11 @@
                                                 <constraint firstItem="mXN-aj-qIL" firstAttribute="top" secondItem="neu-L6-2Qf" secondAttribute="top" constant="10" id="d0t-4G-RiK"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="message" destination="2FH-u8-8Q3" id="QqW-D4-pdF"/>
+                                            <outlet property="timestamp" destination="UAi-wr-jtx" id="cmi-f8-8OG"/>
+                                            <outlet property="username" destination="qnl-I1-tqQ" id="FlA-WF-qNo"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -175,6 +180,9 @@
                         <viewLayoutGuide key="safeArea" id="IjT-Be-yQD"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Messages" image="second" id="CTK-YS-1pa"/>
+                    <connections>
+                        <outlet property="messages" destination="aBK-zh-XyY" id="Uys-4Q-vZ1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1zk-qa-0fc" sceneMemberID="firstResponder"/>
             </objects>

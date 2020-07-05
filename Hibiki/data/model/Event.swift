@@ -1,8 +1,8 @@
 //
-//  Messages.swift
+//  Event.swift
 //  Hibiki
 //
-//  Created by emp-private-mac-suraj on 04/07/20.
+//  Created by emp-private-mac-suraj on 05/07/20.
 //  Copyright © 2020 Goodpatch. All rights reserved.
 //
 
@@ -86,14 +86,6 @@ extension JSON {
     
     func target() -> Target {
         return Target(recipientId: self["recipient_id"].string)
-    }
-    
-}
-
-extension JSON {
-    
-    func nextCursor() -> String? {
-        return self["next_cursor"].string
     }
     
 }

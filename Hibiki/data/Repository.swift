@@ -58,11 +58,14 @@ class Repository {
         })
     }
     
-    func feed() {
-        self.swifter.getHomeTimeline(count: 50, success: { json in
-            print(json)
+    func feed(onSuccess: @escaping ([Feed]?) -> Void, onError: @escaping (Error) -> Void) {
+        self.swifter.getHomeTimeline(count: 10, success: { json in
+            let feeds = json.array?.map{ item in
+                item.feed()
+            }
+            onSuccess(feeds)
         }, failure: { error in
-            print(error)
+            onError(error)
         })
     }
     
